@@ -95,6 +95,7 @@ export const Navbar = ({ isLoggedIn = false }: NavbarProps) => {
                     <Button
                       onClick={() => setIsOpen(false)}
                       asChild
+                      variant="ghost"
                       className="justify-start text-base"
                     >
                       <Link href="/auth#signup">{navbar.signUpLabel}</Link>
@@ -170,7 +171,7 @@ export const Navbar = ({ isLoggedIn = false }: NavbarProps) => {
             <Button asChild size="sm" variant="ghost">
               <Link href="/auth#signin">{navbar.signInLabel}</Link>
             </Button>
-            <Button asChild size="sm">
+            <Button asChild size="sm" variant="ghost">
               <Link href="/auth#signup">{navbar.signUpLabel}</Link>
             </Button>
           </>
