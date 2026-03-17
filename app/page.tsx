@@ -7,9 +7,7 @@ import { LayoutFooterSection } from "../components/home/LayoutFooterSection";
 import { LayoutHeroSection } from "../components/home/LayoutHeroSection";
 import { LayoutPricingSection } from "../components/home/LayoutPricingSection";
 import { LayoutServicesSection } from "../components/home/LayoutServicesSection";
-import { LayoutSponsorsSection } from "../components/home/LayoutSponsorsSection";
 import { LayoutTeamSection } from "../components/home/LayoutTeamSection";
-import { LayoutTestimonialSection } from "../components/home/LayoutTestimonialSection";
 import { Navbar as LayoutNavbar } from "@/components/layout/navbar";
 import { getAuthSession } from "@/lib/auth/session";
 
@@ -30,11 +28,9 @@ export default async function Home() {
   const hide = new Set(whitelist ? envHide : [...defaultHide, ...envHide]);
   const sections = [
     ["layout-hero", <LayoutHeroSection key="layout-hero" />],
-    ["layout-sponsors", <LayoutSponsorsSection key="layout-sponsors" />],
-    ["layout-benefits", <LayoutBenefitsSection key="layout-benefits" />],
     ["layout-features", <LayoutFeatureGridSection key="layout-features" />],
     ["layout-services", <LayoutServicesSection key="layout-services" />],
-    ["layout-testimonials", <LayoutTestimonialSection key="layout-testimonials" />],
+    ["layout-benefits", <LayoutBenefitsSection key="layout-benefits" />],
     ["layout-team", <LayoutTeamSection key="layout-team" />],
     ["layout-pricing", <LayoutPricingSection key="layout-pricing" />],
     ["layout-contact", <LayoutContactSection key="layout-contact" />],
