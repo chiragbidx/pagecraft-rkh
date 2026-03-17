@@ -164,60 +164,63 @@ export type HomeContent = {
 export const defaultHomeContent: HomeContent = {
   // ── Hero ─────────────────────────────────────────────────────────────────
   hero: {
-    badgeInner: "Launch",
-    badgeOuter: "Panda SaaS starter is ready",
-    titleBefore: "Build your next",
-    titleHighlight: "SaaS",
-    titleAfter: "app in days, not weeks",
+    badgeInner: "Welcome",
+    badgeOuter: "LeadFlow CRM is live",
+    titleBefore: "Power your team's",
+    titleHighlight: "Client Relationships",
+    titleAfter: "with absolute clarity.",
     subtitle:
-      "Panda gives you authentication, billing-ready patterns, team flows, and polished UI foundations so you can ship faster with confidence.",
-    primaryCta: { label: "Start Building", href: "#pricing" },
-    secondaryCta: { label: "Explore features", href: "#features" },
+      "LeadFlow helps your team organize clients, track deals, log activity, and collaborate securely—all in one internal CRM workspace.",
+    primaryCta: { label: "Access Your CRM", href: "/auth#signin" },
+    secondaryCta: { label: "Explore Features", href: "#features" },
     heroImageLight: "/hero-image-light.jpeg",
     heroImageDark: "/hero-image-dark.jpeg",
-    heroImageAlt: "Panda dashboard preview",
+    heroImageAlt: "LeadFlow CRM dashboard preview",
   },
 
   // ── Sponsors ─────────────────────────────────────────────────────────────
   sponsors: {
-    heading: "Built with trusted tools",
+    heading: "Powered by industry-trusted platforms",
     items: [
       { icon: "Crown", name: "Vercel" },
-      { icon: "Vegan", name: "Stripe" },
-      { icon: "Ghost", name: "OpenAI" },
-      { icon: "Puzzle", name: "Supabase" },
-      { icon: "Squirrel", name: "Clerk" },
-      { icon: "Cookie", name: "Resend" },
-      { icon: "Drama", name: "Sentry" },
+      { icon: "Lock", name: "Postgres" },
+      { icon: "Users", name: "Drizzle" },
+      { icon: "Sparkle", name: "OpenAI" },
+      { icon: "Mail", name: "SendGrid" },
+      { icon: "Blocks", name: "Shadcn" },
     ],
   },
 
   // ── Benefits ─────────────────────────────────────────────────────────────
   benefits: {
-    eyebrow: "Why Panda",
-    heading: "A practical SaaS app builder starter",
+    eyebrow: "LeadFlow Advantage",
+    heading: "Internal CRM Built For Teams",
     description:
-      "Built for teams that want production-ready foundations with room to customize, not a rigid template you outgrow in a week.",
+      "LeadFlow centralizes your client management, notes, deals, and communication so your internal team works smarter and faster.",
     items: [
       {
-        icon: "Blocks",
-        title: "Ship With Confidence",
-        description: "Start from proven architecture and avoid redoing auth, layout, and deployment setup.",
+        icon: "Users",
+        title: "Full Client Visibility",
+        description:
+          "Every client, contact, and deal at your fingertips. View relationships, history, and status—all in one place.",
       },
       {
-        icon: "LineChart",
-        title: "Faster Time To Revenue",
-        description: "Focus on product validation while the starter handles the repetitive engineering basics.",
+        icon: "Handshake",
+        title: "Frictionless Deal Tracking",
+        description:
+          "Track opportunities from prospect to closed/won. See pipeline and outcomes by owner, stage, or timeline.",
       },
       {
-        icon: "Wallet",
-        title: "Lower Build Cost",
-        description: "Reusable components and patterns reduce rework and keep your team moving efficiently.",
+        icon: "NotebookPen",
+        title: "Actionable Activity History",
+        description:
+          "Log notes, capture every interaction, and maintain full audit trails for compliance and collaboration.",
       },
       {
-        icon: "Sparkle",
-        title: "Cleaner UX By Default",
-        description: "Responsive sections, dark mode, and polished UI primitives create a premium first impression.",
+        icon: "ShieldCheck",
+        title: "Secure & Multi-Tenant",
+        description:
+          "Data separated by company, guarded by roles, governed by modern security best practices.",
       },
     ],
   },
@@ -225,61 +228,113 @@ export const defaultHomeContent: HomeContent = {
   // ── Features ─────────────────────────────────────────────────────────────
   features: {
     eyebrow: "Features",
-    heading: "What you get out of the box",
+    heading: "Everything You Need To Manage Clients",
     subtitle:
-      "Panda combines developer speed and production-grade UX so you can spend your time shipping features instead of rebuilding starter infrastructure.",
+      "LeadFlow brings best-in-class features for internal CRM: persistence, permissioning, reporting, and more—built for clarity, speed, and reliability.",
     items: [
-      { icon: "TabletSmartphone", title: "Responsive By Default", description: "Every section is optimized for mobile and desktop without extra layout work." },
-      { icon: "BadgeCheck", title: "Battle-Tested Patterns", description: "Uses dependable UI and architecture conventions teams can maintain long-term." },
-      { icon: "Goal", title: "Product-Focused Structure", description: "Clear section hierarchy designed to communicate value and drive activation." },
-      { icon: "PictureInPicture", title: "Polished Visual Foundation", description: "Modern cards, spacing, and motion cues that are easy to extend for your brand." },
-      { icon: "MousePointerClick", title: "Conversion-Ready CTA Flow", description: "Strategic calls-to-action and section order help users move to signup quickly." },
-      { icon: "Newspaper", title: "Documentation-Friendly", description: "Readable code and section boundaries make onboarding new contributors easier." },
+      {
+        icon: "Building2",
+        title: "Clients & Companies",
+        description: "All client profiles, contacts, status, and key info—easily referenced and up-to-date.",
+      },
+      {
+        icon: "Contact2",
+        title: "Contacts Directory",
+        description: "Track decision makers, partners, and associated contacts for each client.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Deals & Opportunities",
+        description: "Progress, value, stages, and ownership—manage every opportunity with ease.",
+      },
+      {
+        icon: "Note",
+        title: "Notes & Activities",
+        description: "Quick-add notes, activity log, and full audit trail by user, time, and action.",
+      },
+      {
+        icon: "Layers",
+        title: "Multi-Tenant Security",
+        description: "All data is company-scoped by tenant. No cross-account access by default.",
+      },
+      {
+        icon: "Award",
+        title: "Role-Based Access",
+        description: "Manager/admin can manage data, users have view-only access—always clear permissions.",
+      },
     ],
   },
 
   // ── Services ─────────────────────────────────────────────────────────────
   services: {
-    eyebrow: "Services",
-    heading: "Core starter capabilities",
+    eyebrow: "How LeadFlow Works",
+    heading: "Internal Team, Secure Workspace",
     subtitle:
-      "A pragmatic baseline for SaaS products that need to move quickly without sacrificing quality.",
+      "Onboard staff, assign roles, and work with your company’s data—no outside access. Every record is protected and controlled with robust access guards.",
     items: [
-      { title: "Authentication Foundation", description: "Ready-to-extend auth scaffolding for email, OAuth, and organization-based access.", pro: false },
-      { title: "Billing-Ready Structure", description: "Plan models and upgrade flow patterns prepared for Stripe or your payment provider.", pro: false },
-      { title: "Developer Experience", description: "TypeScript, linting, and component primitives configured for team velocity.", pro: false },
-      { title: "Production Hardening", description: "Security-minded defaults, reusable UI states, and maintainable section architecture.", pro: true },
+      {
+        title: "Company Account Structure",
+        description:
+          "Multi-tenant isolation ensures only your team sees your company’s data. Perfect for internal tools.",
+        pro: false,
+      },
+      {
+        title: "Clear Roles & Permissions",
+        description:
+          "Assign admin, manager, and user roles. Managers control clients, contacts, deals, and notes.",
+        pro: false,
+      },
+      {
+        title: "Full Data Lifecycle",
+        description:
+          "Create, update, archive (not delete) all records. Past data never lost—archived for compliance.",
+        pro: false,
+      },
+      {
+        title: "Always-On Security",
+        description: "Sessions, permissions, and validation enforced everywhere.",
+        pro: true,
+      },
     ],
   },
 
-  // ── Testimonials ─────────────────────────────────────────────────────────
+  // ── Testimonials/Why LeadFlow ────────────────────────────────────────────
   testimonials: {
-    eyebrow: "Testimonials",
-    heading: "Teams shipping with Panda",
+    eyebrow: "Why LeadFlow",
+    heading: "Built For Internal Teams",
     reviews: [
-      { image: "/demo-img.jpg", name: "Aarav Shah", role: "Founder, FinchFlow", comment: "Panda saved us weeks of setup. We launched our first paying plan in less than a sprint.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Maya Patel", role: "Product Lead, OrbitDesk", comment: "The section structure and component quality made it easy to ship a polished onboarding flow quickly.", rating: 4.8 },
-      { image: "/demo-img.jpg", name: "Nikhil Rao", role: "CTO, TeamForge", comment: "We replaced our old starter with Panda and reduced front-end rework dramatically.", rating: 4.9 },
-      { image: "/demo-img.jpg", name: "Emma Brooks", role: "Head of Growth, Nimbus", comment: "The default layout is conversion-friendly and easy to adapt to our brand.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Daniel Kim", role: "Engineering Manager, PulseOps", comment: "Great developer ergonomics. New engineers onboarded fast and started shipping immediately.", rating: 5.0 },
-      { image: "/demo-img.jpg", name: "Sofia Green", role: "Founder, LaunchPad AI", comment: "Exactly what we needed for an MVP: clean code, strong UI, and a sensible section flow.", rating: 4.9 },
+      {
+        image: "/team1.jpg",
+        name: "Chirag Dodiya",
+        role: "Lead Engineer",
+        comment:
+          "LeadFlow streamlined how our staff manage client data and track deals—fast onboarding, always secure.",
+        rating: 5.0,
+      },
+      {
+        image: "/team2.jpg",
+        name: "Elizabeth Moore",
+        role: "Product Designer",
+        comment:
+          "The internal focus means everything is built for clarity, auditability, and data safety.",
+        rating: 4.9,
+      },
     ],
   },
 
   // ── Team ─────────────────────────────────────────────────────────────────
   team: {
     eyebrow: "Team",
-    heading: "Meet the Panda team",
+    heading: "Meet The LeadFlow Team",
     members: [
       {
         imageUrl: "/team1.jpg",
-        firstName: "Leo",
-        lastName: "Miranda",
-        positions: ["Lead Engineer", "Starter Architecture"],
+        firstName: "Chirag",
+        lastName: "Dodiya",
+        positions: ["Product Owner", "Lead Engineer"],
         socialNetworks: [
           { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
           { name: "Github", url: "https://github.com/leoMirandaa" },
-          { name: "X", url: "https://x.com/leo_mirand4" },
         ],
       },
       {
@@ -289,102 +344,39 @@ export const defaultHomeContent: HomeContent = {
         positions: ["Product Designer"],
         socialNetworks: [
           { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "X", url: "https://x.com/leo_mirand4" },
         ],
       },
       {
         imageUrl: "/team3.jpg",
         firstName: "David",
         lastName: "Diaz",
-        positions: ["Platform Engineer", "AI Integrations"],
+        positions: ["Platform Engineer"],
         socialNetworks: [
           { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-        ],
-      },
-      {
-        imageUrl: "/team1.jpg",
-        firstName: "Sarah",
-        lastName: "Robinson",
-        positions: ["Cloud Engineer", "Kubernetes"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-          { name: "X", url: "https://x.com/leo_mirand4" },
-        ],
-      },
-      {
-        imageUrl: "/team2.jpg",
-        firstName: "Michael",
-        lastName: "Holland",
-        positions: ["DevOps Engineer", "CI/CD"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-        ],
-      },
-      {
-        imageUrl: "/team3.jpg",
-        firstName: "Zoe",
-        lastName: "Garcia",
-        positions: ["Frontend Engineer", "Design Systems"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-        ],
-      },
-      {
-        imageUrl: "/team1.jpg",
-        firstName: "Evan",
-        lastName: "James",
-        positions: ["Backend Engineer"],
-        socialNetworks: [
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/leopoldo-miranda/" },
-          { name: "Github", url: "https://github.com/leoMirandaa" },
-          { name: "X", url: "https://x.com/leo_mirand4" },
-        ],
-      },
-      {
-        imageUrl: "/team2.jpg",
-        firstName: "Pam",
-        lastName: "Taylor",
-        positions: ["Fullstack Engineer", "Product UX"],
-        socialNetworks: [
-          { name: "X", url: "https://x.com/leo_mirand4" },
         ],
       },
     ],
   },
 
-  // ── Pricing ──────────────────────────────────────────────────────────────
+  // ── Pricing (Internal Use) ───────────────────────────────────────────────
   pricing: {
-    eyebrow: "Pricing",
-    heading: "Pricing for every stage",
-    subtitle: "Start lean, then scale to enterprise-grade workflows as your product grows.",
-    priceSuffix: "/month",
+    eyebrow: "Internal Use Only",
+    heading: "LeadFlow For Company Staff",
+    subtitle: "LeadFlow is designed and maintained for internal teams—no external access, no public signup. Secure, compliant, and centrally managed for your company.",
+    priceSuffix: "",
     plans: [
       {
-        title: "Starter",
-        popular: false,
-        price: 0,
-        description: "Ideal for prototypes and small internal tools.",
-        buttonText: "Start for free",
-        benefits: ["Up to 3 teammates", "Basic auth patterns", "Core landing sections", "Community support", "Deploy-ready setup"],
-      },
-      {
-        title: "Growth",
+        title: "Company Access",
         popular: true,
-        price: 49,
-        description: "Best for product teams shipping customer-facing SaaS.",
-        buttonText: "Start trial",
-        benefits: ["Unlimited teammates", "Advanced section set", "Billing-ready models", "Priority support", "Team workflows"],
-      },
-      {
-        title: "Enterprise",
-        popular: false,
-        price: 199,
-        description: "For teams requiring compliance, support SLAs, and custom rollout.",
-        buttonText: "Contact sales",
-        benefits: ["Security review support", "SSO/SAML integration path", "Dedicated onboarding", "Phone and email support", "Architecture advisory"],
+        price: 0,
+        description: "LeadFlow is exclusive to authorized company staff and is not available for public sale.",
+        buttonText: "Log In To LeadFlow",
+        benefits: [
+          "Secure internal CRM",
+          "Multi-tenant data safety",
+          "Role-based access",
+          "Audit logging",
+        ],
       },
     ],
   },
@@ -392,95 +384,116 @@ export const defaultHomeContent: HomeContent = {
   // ── Contact ──────────────────────────────────────────────────────────────
   contact: {
     eyebrow: "Contact",
-    heading: "Talk to the Panda team",
+    heading: "Reach The LeadFlow Team",
     description:
-      "Need help customizing the starter, planning architecture, or accelerating launch? Share your goals and timeline.",
-    mailtoAddress: "hello@panda.dev",
+      "Submit questions or support requests for your company workspace. Admins and authorized staff only.",
+    mailtoAddress: "hi@chirag.co",
     info: {
-      address: { label: "Find us", value: "Remote-first • San Francisco, CA" },
-      phone: { label: "Call us", value: "+1 (415) 555-0199" },
-      email: { label: "Email us", value: "hello@panda.dev" },
-      hours: { label: "Visit us", value: ["Monday - Friday", "9AM - 6PM PT"] },
+      address: { label: "Our office", value: "LeadFlow HQ • Remote / Mumbai" },
+      phone: { label: "Main", value: "" },
+      email: { label: "Email", value: "hi@chirag.co" },
+      hours: { label: "Support", value: ["Mon-Fri", "10AM - 7PM IST"] },
     },
-    formSubjects: ["Starter Demo", "Architecture Review", "Design System", "Billing Integration", "Enterprise Plan"],
-    formSubmitLabel: "Send inquiry",
+    formSubjects: [
+      "Workspace Access",
+      "Support",
+      "Feature Request",
+      "Security",
+      "Other",
+    ],
+    formSubmitLabel: "Contact LeadFlow",
   },
 
   // ── FAQ ──────────────────────────────────────────────────────────────────
   faq: {
-    eyebrow: "FAQ",
-    heading: "Common Questions",
+    eyebrow: "LeadFlow FAQ",
+    heading: "Internal CRM, Answered",
     items: [
-      { question: "Is Panda free to start with?", answer: "Yes. You can start with the core template and customize it for your product." },
-      { question: "Can I use this for a production SaaS app?", answer: "Yes. The starter is designed for production-minded teams with scalable structure and reusable UI patterns." },
-      { question: "Does it support dark mode and responsive design?", answer: "Yes. The template includes theme support and responsive layouts across major sections." },
-      { question: "Can I plug in my own auth and billing provider?", answer: "Yes. The structure is provider-agnostic and easy to adapt for your stack." },
-      { question: "How quickly can I launch with Panda?", answer: "Most teams can ship an MVP in days by reusing existing sections and starter patterns." },
+      {
+        question: "Is LeadFlow only for internal company use?",
+        answer: "Yes. LeadFlow is purposely designed for staff—no public signup or external CRM sales.",
+      },
+      {
+        question: "Who can see company data?",
+        answer: "Only staff members associated with your company account. All access is tenant-scoped and permissioned.",
+      },
+      {
+        question: "Can I invite people outside my company?",
+        answer: "No, only admins/managers on your account may add colleagues via secure invite.",
+      },
+      {
+        question: "Is my data safe and separated?",
+        answer: "Yes. Every tenant/company's data is completely separated and secured with role-based guards.",
+      },
+      {
+        question: "Can I remove/archive clients and deals?",
+        answer: "Clients and deals can be archived (not deleted) for audit and compliance.",
+      },
     ],
   },
 
   // ── Footer ───────────────────────────────────────────────────────────────
   footer: {
-    brandName: "Panda",
+    brandName: "LeadFlow",
     columns: [
       {
-        heading: "Contact",
+        heading: "Get in touch",
         links: [
-          { label: "hello@panda.dev", href: "mailto:hello@panda.dev" },
-          { label: "Github", href: "#" },
-          { label: "Twitter", href: "https://x.com" },
-          { label: "Discord", href: "https://discord.com" },
+          { label: "hi@chirag.co", href: "mailto:hi@chirag.co" },
+          { label: "Github", href: "https://github.com/leoMirandaa" },
+          { label: "Docs", href: "https://nextjs.org/docs" },
         ],
       },
       {
         heading: "Product",
         links: [
           { label: "Features", href: "#features" },
-          { label: "Pricing", href: "#pricing" },
           { label: "Contact", href: "#contact" },
-        ],
-      },
-      {
-        heading: "Help",
-        links: [
-          { label: "Contact Us", href: "#contact" },
           { label: "FAQ", href: "#faq" },
-          { label: "Docs", href: "https://nextjs.org/docs" },
         ],
       },
       {
-        heading: "Socials",
+        heading: "Security",
         links: [
-          { label: "GitHub", href: "https://github.com" },
-          { label: "Discord", href: "https://discord.com" },
-          { label: "X", href: "https://x.com" },
+          { label: "Internal Use", href: "#pricing" },
+          { label: "Role-Based", href: "#services" },
         ],
       },
     ],
-    copyright: "\u00a9 2026 Panda SaaS App Builder Starter.",
-    attribution: { label: "Built on Next.js", href: "https://nextjs.org" },
+    copyright: "© 2026 LeadFlow CRM",
+    attribution: { label: "Built with Next.js", href: "https://nextjs.org" },
   },
 
   // ── Navbar ───────────────────────────────────────────────────────────────
   navbar: {
-    brandName: "Panda",
+    brandName: "LeadFlow",
     routes: [
-      { href: "/#testimonials", label: "Testimonials" },
+      { href: "/#features", label: "Features" },
+      { href: "/#services", label: "How it works" },
       { href: "/#team", label: "Team" },
       { href: "/#contact", label: "Contact" },
       { href: "/#faq", label: "FAQ" },
     ],
-    featureDropdownLabel: "Features",
-    featureImage: { src: "/demo-img.jpg", alt: "Panda preview" },
+    featureDropdownLabel: "CRM Features",
+    featureImage: { src: "/hero-image-light.jpeg", alt: "LeadFlow CRM preview" },
     features: [
-      { title: "Auth, Billing, Teams", description: "Production-ready flows for sign-in, subscriptions, and organizations." },
-      { title: "UI + Design System", description: "Shadcn-based components with consistent theming and dark mode support." },
-      { title: "Deploy Fast", description: "Sane defaults for Next.js, TypeScript, and Vercel-first deployment." },
+      {
+        title: "Client Management",
+        description: "Organize and find all company clients in one place.",
+      },
+      {
+        title: "Deals & Opportunities",
+        description: "Full pipeline tracking for every deal and opportunity.",
+      },
+      {
+        title: "Contacts Directory",
+        description: "Associate decision makers and partners to every client.",
+      },
     ],
-    signInLabel: "Sign in",
-    signUpLabel: "Sign up",
+    signInLabel: "Log in",
+    signUpLabel: "Request Access",
     dashboardLabel: "Dashboard",
-    githubLink: { href: "https://nextjs.org/docs", ariaLabel: "View on GitHub" },
+    githubLink: { href: "https://github.com/leoMirandaa", ariaLabel: "View on Github" },
   },
 };
 
