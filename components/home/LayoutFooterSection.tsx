@@ -45,6 +45,9 @@ export const LayoutFooterSection = () => {
             </Link>
           </h3>
         </section>
+        <div className="mt-5 text-xs text-muted-foreground">
+          LeadFlow is a private internal CRM for company staff only. No public signup.
+        </div>
       </div>
     </footer>
   );
