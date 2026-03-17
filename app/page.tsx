@@ -5,7 +5,6 @@ import { LayoutFaqSection } from "../components/home/LayoutFaqSection";
 import { LayoutFeatureGridSection } from "../components/home/LayoutFeatureGridSection";
 import { LayoutFooterSection } from "../components/home/LayoutFooterSection";
 import { LayoutHeroSection } from "../components/home/LayoutHeroSection";
-import { LayoutPricingSection } from "../components/home/LayoutPricingSection";
 import { LayoutServicesSection } from "../components/home/LayoutServicesSection";
 import { LayoutTeamSection } from "../components/home/LayoutTeamSection";
 import { Navbar as LayoutNavbar } from "@/components/layout/navbar";
@@ -32,7 +31,6 @@ export default async function Home() {
     ["layout-services", <LayoutServicesSection key="layout-services" />],
     ["layout-benefits", <LayoutBenefitsSection key="layout-benefits" />],
     ["layout-team", <LayoutTeamSection key="layout-team" />],
-    ["layout-pricing", <LayoutPricingSection key="layout-pricing" />],
     ["layout-contact", <LayoutContactSection key="layout-contact" />],
     ["layout-faq", <LayoutFaqSection key="layout-faq" />],
     ["layout-footer", <LayoutFooterSection key="layout-footer" />],
